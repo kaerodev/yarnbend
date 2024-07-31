@@ -1,0 +1,18 @@
+{ ... }:
+{
+  imports = 
+    [ (import ./hypr) ]
+  ++[ (import ./packages.nix) ]
+  ++[ (import ./bar-waybar) ]
+  ++[ (import ./bat.nix) ]            # cat with syntax highlighting and other things UwU
+  ++[ (import ./terminal-kitty.nix) ]
+  ++[ (import ./starship.nix) ]       # prompt customization
+  ++[ (import ./browser-firefox.nix) ]
+  ++[ (import ./scripts.nix) ]
+  ++[ (import ./launcher-wofi.nix) ]
+  ++[ (import ./git.nix) ]
+  ++[ (import ./gtk.nix) ]
+  ++[ (import ./zsh.nix) ]
+  ++[ (import ./nixvim.nix) ]
+  ++[ (import ./steam.nix) ];
+}

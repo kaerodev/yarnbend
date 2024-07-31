@@ -1,0 +1,30 @@
+{ username, config, lib, pkgs, ... }:
+{
+  programs.zsh = {
+    enable = true;
+    dotDir = ".config/zsh";
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+        "git"
+        "fzf"
+      ];
+    };
+
+    shellAliases = {
+      icat = "kitten icat";
+      cat = "bat";
+
+      ls = "eza --icons -a --group-directories-first -G ";
+      lt = "eza --icons -a --group-directories-first -G --tree";
+    };
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+}
