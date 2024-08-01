@@ -22,6 +22,8 @@
     fzf
 
     unscii
+
+    rustup
   ]);
 }
 

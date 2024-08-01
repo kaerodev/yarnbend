@@ -3,6 +3,7 @@
   imports = 
     [ (import ./hypr) ]
   ++[ (import ./packages.nix) ]
+  ++[ (import ./nixvim) ]
   ++[ (import ./bar-waybar) ]
   ++[ (import ./bat.nix) ]            # cat with syntax highlighting and other things UwU
   ++[ (import ./terminal-kitty.nix) ]
@@ -13,6 +14,5 @@
   ++[ (import ./git.nix) ]
   ++[ (import ./gtk.nix) ]
   ++[ (import ./zsh.nix) ]
-  ++[ (import ./nixvim.nix) ]
-  ++[ (import ./steam.nix) ];
+  ++[ (import ./games.nix) ];
 }

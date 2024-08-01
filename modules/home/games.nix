@@ -2,6 +2,13 @@
 {
   # I don't want steam on the laptop
   config = if (host == "winger") then {
+
+/*
+    home.packages = (with pkgs; [
+      osu-lazer
+    ]);
+    */
+
     programs.steam = {
       enable = true;
       remotePlay.openFirewall = true;

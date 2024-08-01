@@ -28,11 +28,15 @@
 
       atomizer = lib.nixosSystem {
         inherit system;
-        modules = [
-          (import ./hosts/laptop)
-        ];
+        modules = [ (import ./hosts/laptop) ];
         specialArgs = { host="atomizer"; inherit self username inputs; };
       };
+
+      shortstop = lib.nixosSystem {
+        inherit system;
+        modules = [ (import ./hosts/desktop) ];
+        specialArgs = { host = "shortstop"; inherit self username inputs; };
+      };      
 
     };
   };
