@@ -124,8 +124,9 @@
       }; # settings
 
       extraConfig = "
-        monitor=,preferred,auto,auto
-        monitor=eDP-1,preferred,auto,1
+        monitor=,highrr,auto,1
+        monitor=HDMI-A-2, 1920x1080@144, -1080x-139, 1, transform, 1
+        monitor=HDMI-A-1, 2560x1440@144, 0x0, 1
 
         xwayland {
           force_zero_scaling = true
