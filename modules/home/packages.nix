@@ -24,6 +24,7 @@
     unscii
 
     libgcc
+    gcc
     rustup
   ]);
 }
