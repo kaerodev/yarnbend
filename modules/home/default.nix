@@ -15,4 +15,5 @@
   ++[ (import ./gtk.nix) ]
   ++[ (import ./zsh.nix) ]
   ++[ (import ./games.nix) ];
+
 }

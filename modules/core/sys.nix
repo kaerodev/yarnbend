@@ -25,6 +25,8 @@
     fira-code-symbols
   ];
 
+  environment.localBinInPath = true;
+
   environment.systemPackages = with pkgs; [
     wget
       git
@@ -34,6 +36,7 @@
       wget
       zip
       unzip
+      xdg-utils
 
 # vim configuration
       ((vim_configurable.override {  }).customize{

@@ -23,6 +23,7 @@
 
     unscii
 
+    libgcc
     rustup
   ]);
 }
