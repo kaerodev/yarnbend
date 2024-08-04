@@ -11,7 +11,7 @@
      '')
 
     (pkgs.writeShellScriptBin "upgrade-switch" ''
-     sudo nixos-rebuild switch --flake /home/${username}/.dotfiles#${host}
+     sudo nixos-rebuild switch --upgrade --flake /home/${username}/.dotfiles#${host}
      '')
 
     (pkgs.writeShellScriptBin "update-flake" ''

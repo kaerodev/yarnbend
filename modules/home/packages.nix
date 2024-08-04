@@ -17,6 +17,7 @@
     blender
     vesktop
     brillo
+    tauon
 
     eza
     fzf

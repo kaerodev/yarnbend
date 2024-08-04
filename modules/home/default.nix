@@ -2,6 +2,7 @@
 {
   imports = 
     [ (import ./hypr) ]
+  ++[ (import ./settings.nix) ]
   ++[ (import ./packages.nix) ]
   ++[ (import ./nixvim) ]
   ++[ (import ./bar-waybar) ]
