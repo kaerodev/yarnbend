@@ -8,7 +8,11 @@
     extraSpecialArgs = {inherit inputs username host; };
 
     users.${username} = {
-      imports = [ ./../home];
+
+      imports = if (host == "shortstop") 
+      then [ ./../home/desktop.default.nix]
+      else [./../home];
+
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "24.05";
