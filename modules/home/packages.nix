@@ -4,25 +4,32 @@
 
   home.packages = (with pkgs; [
     kitty
+    xarchiver
     zed-editor
     pcmanfm
+    syncthing
     pavucontrol
-    xarchiver
+    nomacs
+
+    obsidian
     firefox
     libreoffice
-    syncthing
     obs-studio
-    rawtherapee
-    obsidian
     blender
-    vesktop
-    brillo
+    rawtherapee
+
+    spotify
     tauon
+    vesktop
+
+    brillo
+    xdg-desktop-portal-hyprland
+    openssl
 
     eza
     fzf
 
-    unscii
+    unscii # font
 
     libgcc
     gcc

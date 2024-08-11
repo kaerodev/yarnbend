@@ -28,15 +28,16 @@
   environment.localBinInPath = true;
 
   environment.systemPackages = with pkgs; [
+    ncurses
     wget
-      git
-      killall
-      htop
-      neofetch
-      wget
-      zip
-      unzip
-      xdg-utils
+    git
+    killall
+    htop
+    neofetch
+    wget
+    zip
+    unzip
+    xdg-utils
 
 # vim configuration
       ((vim_configurable.override {  }).customize{

@@ -36,7 +36,7 @@
         inherit system;
         modules = [ (import ./hosts/desktop) ];
         specialArgs = { host = "shortstop"; inherit self username inputs; };
-      };      
+      };
 
     };
   };

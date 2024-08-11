@@ -18,6 +18,8 @@
       icat = "kitten icat";
       cat = "bat";
 
+      ns = "nix-shell --run zsh ~/.dotfiles/modules/core/shell.nix";
+
       ls = "eza --icons -a --group-directories-first -G ";
       lt = "eza --icons -a --group-directories-first -G --tree";
     };

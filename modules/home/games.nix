@@ -4,7 +4,7 @@
   config = if (host == "shortstop") then {
 
     home.packages = (with pkgs; [
-      osu-lazer
+      osu-lazer-bin
     ]);
   }
   else {};

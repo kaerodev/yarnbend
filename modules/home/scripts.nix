@@ -15,7 +15,7 @@
      '')
 
     (pkgs.writeShellScriptBin "update-flake" ''
-     sudo nix flake update /home/${username}/.dotfiles#${host}
+     sudo nix flake update ~/.dotfiles#
      '')
   ];
 }
