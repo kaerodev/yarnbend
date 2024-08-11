@@ -15,6 +15,7 @@
     firefox
     libreoffice
     obs-studio
+    kdenlive
     blender
     rawtherapee
 
