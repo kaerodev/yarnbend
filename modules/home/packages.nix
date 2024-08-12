@@ -10,6 +10,7 @@
     syncthing
     pavucontrol
     nomacs
+    mpv
 
     obsidian
     firefox
