@@ -17,6 +17,8 @@
     libreoffice
     obs-studio
     rawtherapee
+    audacity
+    mangohud
 
     spotify
     tauon

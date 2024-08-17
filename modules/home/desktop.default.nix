@@ -6,5 +6,7 @@
   home.packages = (with pkgs; [
     kdenlive
     blender
+    gimp
+    r2modman
   ]);
 }
