@@ -21,22 +21,27 @@
     mangohud
 
     spotify
-    tauon
+    #tauon
     vesktop
 
     brillo
     usbutils
     xdg-desktop-portal-hyprland
     openssl
+    python312Packages.pip
+    wineWowPackages.stable
 
     eza
     fzf
 
     unscii # font
 
+    mono
     libgcc
     gcc
     rustup
+
   ]);
+  
 }
 
