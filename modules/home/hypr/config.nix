@@ -8,6 +8,7 @@
 
         exec-once = [
           "waybar &"
+          "hyprctl setcursor Bibata-Modern-Ice 24"
         ];
 
         input = {
