@@ -41,6 +41,7 @@
     libgcc
     gcc
     rustup
+    lldb
 
   ]);
   

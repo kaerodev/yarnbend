@@ -20,8 +20,8 @@
         general = {
           "$mainMod" = "SUPER";
 
-          gaps_in = 17;
-          gaps_out = 34;
+          gaps_in = 5;
+          gaps_out = 10;
           border_size = 3;
           "col.active_border" = "rgba(ceaa7aff)";
           "col.inactive_border" = "rgba(595959AA)";
