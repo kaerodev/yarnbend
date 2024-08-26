@@ -2,6 +2,7 @@
 {
   imports = 
     [ (import ./hypr) ]
+  ++[ (import ./desktop.nix) ]
   ++[ (import ./broot.nix) ]
   ++[ (import ./helix.nix) ]
   ++[ (import ./settings.nix) ]

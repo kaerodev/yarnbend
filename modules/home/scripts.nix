@@ -17,5 +17,9 @@
     (pkgs.writeShellScriptBin "update-flake" ''
      sudo nix flake update ~/.dotfiles#
      '')
+
+    (pkgs.writeShellScriptBin "hx-open" ''
+     kitty hx $1
+    '')
   ];
 }

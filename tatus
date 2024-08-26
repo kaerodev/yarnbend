@@ -1,0 +1,101 @@
+[33mcommit fcff086e5bc9f9fb23f8b0dcf5175789630aa859[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Fri Aug 23 09:31:11 2024 -0700
+
+    wm changes and broot
+
+[33mcommit e3926371221f1029281648ff8ea1568a32fc993f[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Thu Aug 22 21:31:28 2024 -0700
+
+    themes
+
+[33mcommit c93b285fd56855cee96a9b484921eba4381f6f2b[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Tue Aug 20 18:53:48 2024 -0700
+
+    update
+
+[33mcommit 102a415bca5c65a761687799194819d9a93d107a[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sat Aug 17 09:39:05 2024 -0700
+
+    r2modman for desktop
+
+[33mcommit e294a04af25a61946714ca20032aa84395a01016[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sun Aug 11 19:35:21 2024 -0700
+
+    usbutils
+
+[33mcommit 600119b5432806f0a2f05740b69171b395d35307[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sun Aug 11 18:28:53 2024 -0700
+
+    mpv
+
+[33mcommit c94d7f84a8f6af918c9fbfc0882742889f24eb4b[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sun Aug 11 15:25:43 2024 -0700
+
+    desktop exclusive packages
+
+[33mcommit aec84a02d4a1200092f4bc51af0659781585846e[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sun Aug 11 11:53:12 2024 -0700
+
+    added kdenlive
+
+[33mcommit 8c3da0b82a2d4f01d2f10dd877c3cbb11fee24ba[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sun Aug 11 11:39:20 2024 -0700
+
+    don't remember, don't care
+
+[33mcommit 0355fd75136720ade4bf8981a07b928c045317b5[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Sun Aug 4 10:57:58 2024 -0700
+
+    added tauon
+
+[33mcommit 7c479a8b25e53d8a50861f21f92055be5ea9c906[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Fri Aug 2 20:33:51 2024 -0700
+
+    added gcc
+
+[33mcommit 075c89dd7dbeffeaad765150545046dabf4f0c79[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Fri Aug 2 20:27:14 2024 -0700
+
+    add libgcc
+
+[33mcommit 079d6c50c345815165963b3332d41d5a96166a8f[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Thu Aug 1 19:41:58 2024 -0700
+
+    add nix-ld
+
+[33mcommit 80a163df9962abb5be9008189219bfc9618b49d1[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Thu Aug 1 19:29:29 2024 -0700
+
+    steam workaround
+
+[33mcommit ba5e9abae77ed985c6629b3d0e65e75fb98613a7[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Thu Aug 1 18:21:14 2024 -0700
+
+    fixed desktop configuration
+
+[33mcommit f8fd0a56941103f49a95067184ea2910de5e02b5[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Thu Aug 1 14:26:54 2024 -0700
+
+    nixvim and osu
+
+[33mcommit caa1315752827414765e0ca532da51eb1b13460d[m
+Author: kaero <baphung1740@gmail.com>
+Date:   Wed Jul 31 16:50:18 2024 -0700
+
+    Initial Commit
