@@ -21,7 +21,7 @@
           "$mainMod" = "SUPER";
 
           gaps_in = 5;
-          gaps_out = 10;
+          gaps_out = 24;
           border_size = 3;
           "col.active_border" = "rgba(ceaa7aff)";
           "col.inactive_border" = "rgba(595959AA)";

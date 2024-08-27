@@ -12,6 +12,7 @@
     nomacs
     mpv
     inkscape
+    godot_4
 
     obsidian
     firefox
