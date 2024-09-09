@@ -1,4 +1,4 @@
-{ lib, config, pkgs, ... }:
+{ host, lib, config, pkgs, ... }:
 {
   wayland.windowManager = {
     hyprland = {
@@ -124,7 +124,8 @@
         ];
       }; # settings
 
-      extraConfig = "
+      extraConfig = if (host == "shortstop")
+      then"
         monitor=,highrr,auto,1
         monitor=HDMI-A-2, 1920x1080@144, -1080x-139, 1, transform, 1
         monitor=HDMI-A-1, 2560x1440@144, 0x0, 1
@@ -132,7 +133,14 @@
         xwayland {
           force_zero_scaling = true
         }
-      ";        
+      "        
+      else"
+        monitor=eDP-1, 1920x1080@60, 0x0, 1
+        monitor=DP-2, 2560x1440@60,-2560x0, 1
+        xwayland {
+          force_zero_scaling = true
+        }
+      ";
     };
   };
 }

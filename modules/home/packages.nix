@@ -12,6 +12,7 @@
     nomacs
     mpv
     inkscape
+    networkmanagerapplet
 
     obsidian
     firefox
@@ -41,6 +42,7 @@
     libgcc
     gcc
     rustup
+    python3
     lldb
 
   ]);

@@ -21,6 +21,8 @@
         installRustc = false;
         installCargo = false;
       };
+      pyright.enable = true;
+      marksman.enable = true;
     };
   };
 }
