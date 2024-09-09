@@ -14,6 +14,7 @@
     inkscape
     networkmanagerapplet
     godot_4
+    trenchbroom
 
     obsidian
     firefox
@@ -24,7 +25,6 @@
     mangohud
 
     spotify
-    #tauon
     vesktop
 
     brillo

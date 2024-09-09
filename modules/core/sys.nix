@@ -14,6 +14,9 @@
 
   nixpkgs = {
     config.allowUnfree = true;
+    config.permittedInsecurePackages = [
+      "freeimage-unstable-2021-11-01"
+    ];
   };
 
   time.timeZone = "America/Vancouver";
