@@ -27,6 +27,16 @@
 
   environment.localBinInPath = true;
 
+  environment.sessionVariables = rec {
+    EDITOR = "hx";
+    TEST_VAR = "test";
+
+    XDG_BIN_HOME = "$HOME/.local/bin";
+    PATH = [
+      "${XDG_BIN_HOME}"
+    ];
+  };
+
   environment.systemPackages = with pkgs; [
     ncurses
     wget

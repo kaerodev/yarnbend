@@ -13,6 +13,7 @@
     mpv
     inkscape
     networkmanagerapplet
+    godot_4
 
     obsidian
     firefox
