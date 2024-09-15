@@ -51,6 +51,7 @@
     zip
     unzip
     xdg-utils
+    wluma
 
 # vim configuration
       ((vim_configurable.override {  }).customize{

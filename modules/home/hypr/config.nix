@@ -1,4 +1,4 @@
-{ host, lib, config, pkgs, ... }:
+{ username, host, lib, config, pkgs, ... }:
 {
   wayland.windowManager = {
     hyprland = {
@@ -86,7 +86,7 @@
           "$mainMod, RETURN, exec, kitty"
           "$mainMod, B, exec, firefox"
           "$mainMod, V, exec, pcmanfm"
-          "$mainMod, G, exec, wofi --show drun"
+          "$mainMod, G, exec, tofi-drun --drun-launch=true --config=/home/${username}/.config/tofi/config"
 
           "$mainMod, A, workspace, 1"
           "$mainMod, S, workspace, 2"
