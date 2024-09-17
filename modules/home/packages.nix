@@ -45,7 +45,7 @@
     rustup
     python3
     lldb
-
+    ripgrep
   ]);
   
 }
