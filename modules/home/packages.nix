@@ -14,7 +14,8 @@
     inkscape
     networkmanagerapplet
     godot_4
-    trenchbroom
+    prismlauncher
+    openmw
 
     obsidian
     firefox
