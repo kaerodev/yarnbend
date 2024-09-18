@@ -2,6 +2,7 @@
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
+    ./autocomplete.nix
     ./keymap.nix
     ./options.nix
     ./plugins
