@@ -81,7 +81,7 @@
           "$mainMod, TAB, fullscreen, 0"
           "$mainMod, T, togglefloating"
           "$mainMod, O, togglesplit"
-          "$mainMod, P, pseudo"
+          "$mainMod, I, pseudo"
 
           "$mainMod, RETURN, exec, kitty"
           "$mainMod, B, exec, firefox"
@@ -110,6 +110,10 @@
           # Scroll through existing workspaces with mainMod + scroll
           "$mainMod, mouse_down, workspace, e+1"
           "$mainMod, mouse_up, workspace, e-1"
+
+          ", PRINT, exec, hyprshot -m output -o ~/Pictures/screenshots"
+          "SHIFT, PRINT, exec, hyprshot -m region -o ~/Pictures/screenshots"
+          "$mainMod SHIFT, PRINT, exec, hyprshot -m active -o ~/Pictures/screenshots"
 
 
           # Change screen brightness

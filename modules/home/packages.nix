@@ -16,6 +16,7 @@
     godot_4
     prismlauncher
     openmw
+    vscode
 
     obsidian
     firefox
@@ -33,7 +34,18 @@
     xdg-desktop-portal-hyprland
     openssl
     python312Packages.pip
+    python312Packages.tkinter
     wineWowPackages.stable
+
+    # Screenshots
+    grim
+    slurp
+    jq
+    wl-clipboard
+    libnotify
+    mako
+
+    hyprshot
 
     eza
     fzf
@@ -44,7 +56,7 @@
     libgcc
     gcc
     rustup
-    python3
+    python3Full
     lldb
     ripgrep
   ]);
