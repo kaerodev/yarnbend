@@ -2,6 +2,8 @@
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
 
+  hardware.brillo.enable = true;
+
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;

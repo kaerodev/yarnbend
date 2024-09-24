@@ -29,7 +29,6 @@
     spotify
     vesktop
 
-    brillo
     usbutils
     xdg-desktop-portal-hyprland
     openssl
