@@ -31,7 +31,7 @@
   environment.localBinInPath = true;
 
   environment.sessionVariables = rec {
-    EDITOR = "hx";
+    EDITOR = "neovim";
     TEST_VAR = "test";
 
     XDG_BIN_HOME = "$HOME/.local/bin";

@@ -12,7 +12,7 @@
 
   programs.nixvim = {
     enable = true;
-    defaultEditor = false;
+    defaultEditor = true;
 
     performance.combinePlugins = {
       enable = true;

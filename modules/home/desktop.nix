@@ -1,10 +1,10 @@
 { ... }:
 {
   xdg.desktopEntries = {
-    hx = {
-      name = "Helix";
+    nvim = {
+      name = "Neovim";
       genericName = "Text Editor";
-      exec = "hx-open %F";
+      exec = "nvopen %F";
       type = "Application";
       startupNotify = false;
     };

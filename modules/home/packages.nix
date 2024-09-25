@@ -5,7 +5,6 @@
   home.packages = (with pkgs; [
     kitty
     xarchiver
-    zed-editor
     pcmanfm
     syncthing
     pavucontrol
@@ -17,6 +16,7 @@
     prismlauncher
     openmw
     vscode
+    zotero
 
     obsidian
     firefox

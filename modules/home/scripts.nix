@@ -18,8 +18,8 @@
      sudo nix flake update ~/.dotfiles#
      '')
 
-    (pkgs.writeShellScriptBin "hx-open" ''
-     kitty hx $1
+    (pkgs.writeShellScriptBin "nvopen" ''
+     kitty nvim $1
     '')
   ];
 }
