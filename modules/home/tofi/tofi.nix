@@ -3,6 +3,8 @@
   programs.tofi = {
     enable = true;
     settings = {
+      terminal = true;
+
       background-color = "#F9F5DDFF";
       background = "#F9F5DDFF";
       prompt-background = "#F9F5DDFF";

@@ -29,6 +29,7 @@
     spotify
     vesktop
 
+    desktop-file-utils
     usbutils
     xdg-desktop-portal-hyprland
     openssl

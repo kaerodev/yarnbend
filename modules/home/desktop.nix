@@ -2,7 +2,7 @@
 {
   xdg.desktopEntries = {
     nvim = {
-      name = "Neovim";
+      name = "Nvim";
       genericName = "Text Editor";
       exec = "nvopen %F";
       type = "Application";
