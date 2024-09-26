@@ -17,6 +17,7 @@
     openmw
     vscode
     zotero
+    zed-editor
 
     obsidian
     firefox

@@ -31,7 +31,8 @@
   environment.localBinInPath = true;
 
   environment.sessionVariables = rec {
-    EDITOR = "neovim";
+    EDITOR = "nvim";
+    VISUAL = "Nvim";
     TEST_VAR = "test";
 
     XDG_BIN_HOME = "$HOME/.local/bin";

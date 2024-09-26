@@ -8,5 +8,6 @@
     blender
     gimp
     r2modman
+    trenchbroom
   ]);
 }

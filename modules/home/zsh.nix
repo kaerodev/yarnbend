@@ -23,6 +23,11 @@
       ls = "eza --icons -a --group-directories-first -G ";
       lt = "eza --icons -a --group-directories-first -G --tree";
     };
+
+    sessionVariables = {
+      EDITOR = "nvim";
+      VISUAL = "Nvim";
+    };
   };
 
   programs.zoxide = {

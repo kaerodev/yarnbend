@@ -3,7 +3,7 @@
   home.shellAliases.h = "hx";
 
   programs.helix = {
-    enable = true;
+    enable = false;
     defaultEditor = false;
 
     settings = {
