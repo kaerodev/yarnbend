@@ -2,6 +2,7 @@
 {
   home.sessionPath = [
     "/home/${username}/.cargo/bin"
+    "/home/${username}/.local/bin"
   ];
 
   home.sessionVariables = {
