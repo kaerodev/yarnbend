@@ -9,6 +9,7 @@
     syncthing
     pavucontrol
     nomacs
+    zathura
     mpv
     inkscape
     networkmanagerapplet
@@ -18,6 +19,11 @@
     vscode
     zotero
     zed-editor
+    unrar
+    gnumake
+
+    cataclysm-dda-git
+    fuse
 
     obsidian
     firefox

@@ -3,6 +3,7 @@
   # make separate file for plugins that need more configuration
   imports = 
     [ (import ./lsp.nix) ]
+  ++[ (import ./vimtex.nix) ]
   ++[ (import ./telescope.nix) ];
 
   programs.nixvim.plugins = {
