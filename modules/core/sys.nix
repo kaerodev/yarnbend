@@ -26,7 +26,10 @@
   fonts.packages = with pkgs; [
     fira-code
     fira-code-symbols
+    liberation_ttf
   ];
+
+  fonts.enableDefaultPackages = true;
 
   environment.localBinInPath = true;
 

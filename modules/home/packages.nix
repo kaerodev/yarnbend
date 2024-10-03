@@ -1,4 +1,15 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
+let
+  tex = (pkgs.texlive.combine {
+    inherit (pkgs.texlive) scheme-full
+      lipsum
+      apa7
+      dvisvgm dvipng # for preview and export as html
+      wrapfig amsmath ulem hyperref capt-of;
+      #(setq org-latex-compiler "lualatex")
+      #(setq org-preview-latex-default-process 'dvisvgm)
+  });
+in
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -21,6 +32,8 @@
     zed-editor
     unrar
     gnumake
+    tex
+    tectonic
 
     cataclysm-dda-git
     fuse

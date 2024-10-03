@@ -18,6 +18,10 @@
      sudo nix flake update --flake ~/.dotfiles#
      '')
 
+    (pkgs.writeShellScriptBin "nix-clean" ''
+      nix-collect-garbage --delete-older-than 15d
+     '')
+
     (pkgs.writeShellScriptBin "nvopen" ''
      kitty nvim $1
     '')
