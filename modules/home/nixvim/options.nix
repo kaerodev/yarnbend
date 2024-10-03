@@ -23,6 +23,8 @@
       shiftwidth = 2;
       expandtab = true;
 
+      # wrapping\
+      textwidth = 90;
     };
   };
 }

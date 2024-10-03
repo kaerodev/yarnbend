@@ -51,8 +51,9 @@
     wl-clipboard
     libnotify
     mako
-
     hyprshot
+
+    alsa-lib
 
     eza
     fzf

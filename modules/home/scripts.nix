@@ -15,7 +15,7 @@
      '')
 
     (pkgs.writeShellScriptBin "update-flake" ''
-     sudo nix flake update ~/.dotfiles#
+     sudo nix flake update --flake ~/.dotfiles#
      '')
 
     (pkgs.writeShellScriptBin "nvopen" ''

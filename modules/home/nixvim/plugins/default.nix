@@ -3,6 +3,8 @@
   # make separate file for plugins that need more configuration
   imports = 
     [ (import ./lsp.nix) ]
+  ++[ (import ./which-key.nix) ]
+  ++[ (import ./wrapping.nix) ]
   ++[ (import ./vimtex.nix) ]
   ++[ (import ./telescope.nix) ];
 
