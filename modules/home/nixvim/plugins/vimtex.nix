@@ -5,6 +5,7 @@
 
     settings = {
       view_method = "zathura";
+      compiler_method = "latexrun";
     };
   };
 }
