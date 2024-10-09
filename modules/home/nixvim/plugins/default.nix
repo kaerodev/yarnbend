@@ -4,6 +4,7 @@
   imports = 
     [ (import ./lsp.nix) ]
   ++[ (import ./which-key.nix) ]
+  ++[ (import ./harpoon.nix) ]
   ++[ (import ./wrapping.nix) ]
   ++[ (import ./vimtex.nix) ]
   ++[ (import ./telescope.nix) ];

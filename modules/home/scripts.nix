@@ -15,7 +15,7 @@
      '')
 
     (pkgs.writeShellScriptBin "update-flake" ''
-     sudo nix flake update --flake ~/.dotfiles#
+     sudo nix flake update ~/.dotfiles#
      '')
 
     (pkgs.writeShellScriptBin "nix-clean" ''
