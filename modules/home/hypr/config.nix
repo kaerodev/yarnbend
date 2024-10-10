@@ -70,7 +70,6 @@
         };
 
         bind = [
-
           # window navigation
           "$mainMod, H, movefocus, l"
           "$mainMod, J, movefocus, d"
@@ -111,6 +110,7 @@
           "$mainMod, mouse_down, workspace, e+1"
           "$mainMod, mouse_up, workspace, e-1"
 
+          # screnshots
           ", PRINT, exec, hyprshot -m output -o ~/Pictures/screenshots"
           "SHIFT, PRINT, exec, hyprshot -m region -o ~/Pictures/screenshots"
           "$mainMod SHIFT, PRINT, exec, hyprshot -m active -o ~/Pictures/screenshots"
@@ -128,7 +128,7 @@
         ];
       }; # settings
 
-      extraConfig = if (host == "shortstop")
+      extraConfig = if (host == "shortstop") 
       then"
         monitor=,highrr,auto,1
         monitor=HDMI-A-2, 1920x1080@144, -1080x-139, 1, transform, 1
