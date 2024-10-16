@@ -22,6 +22,8 @@
     gnumake
     texlive.combined.scheme-full
     latexrun
+    clifm
+    lf
 
     cataclysm-dda-git
     fuse

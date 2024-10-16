@@ -1,4 +1,4 @@
-{ pkgs, config, anyrun, system, ... }:
+{ pkgs, config, system, ... }:
 {
   imports = [
     ./hardware-configuration.nix

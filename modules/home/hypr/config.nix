@@ -50,7 +50,7 @@
         };
 
         animations = {
-          enabled = true;
+          enabled = false;
 
 
           # should redo these some time
@@ -105,6 +105,10 @@
           "$mainMod SHIFT, 3, movetoworkspace, 7"
           "$mainMod SHIFT, 4, movetoworkspace, 8"
 
+          "$mainMod CTRL, H, resizeactive, -10 0"
+          "$mainMod CTRL, J, resizeactive, 0 -10"
+          "$mainMod CTRL, K, resizeactive, 0 10"
+          "$mainMod CTRL, L, resizeactive, 10 0"
 
           # Scroll through existing workspaces with mainMod + scroll
           "$mainMod, mouse_down, workspace, e+1"

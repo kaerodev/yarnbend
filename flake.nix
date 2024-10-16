@@ -14,13 +14,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    anyrun = {
-      url = "github:anyrun-org/anyrun";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nixvim, anyrun, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nixvim, ... }@inputs:
   # "let binding"
   let
     lib = nixpkgs.lib;
@@ -35,7 +31,6 @@
         inherit system;
         modules = [ 
           (import ./hosts/laptop)
-          {environment.systemPackages = [ anyrun.packages.${system}.anyrun ];}
         ];
         specialArgs = { host="atomizer"; inherit self username inputs; };
       };
@@ -44,7 +39,6 @@
         inherit system;
         modules = [ 
           (import ./hosts/desktop) 
-          {environment.systemPackages = [ anyrun.packages.${system}.anyrun ];}
         ];
         specialArgs = { host = "shortstop"; inherit self username inputs; };
       };
