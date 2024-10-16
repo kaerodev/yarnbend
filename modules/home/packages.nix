@@ -3,6 +3,7 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = (with pkgs; [
+    # random apps
     kitty
     xarchiver
     pcmanfm
@@ -23,7 +24,9 @@
     texlive.combined.scheme-full
     latexrun
     clifm
+    kickoff
     lf
+    trashy
 
     cataclysm-dda-git
     fuse

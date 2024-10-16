@@ -7,7 +7,7 @@
       exec = "nvopen %F";
       type = "Application";
       startupNotify = false;
-      mimeType = [ "text/markdown" "text/plain" ];
+      mimeType = [ "text/markdown" "text/plain" "text/x-tex" ];
     };
   };
 }

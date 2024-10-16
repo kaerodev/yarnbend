@@ -3,7 +3,7 @@
   imports = 
     [ (import ./hypr) ]
   ++[ (import ./desktop.nix) ]
-  ++[ (import ./ranger.nix) ]
+  ++[ (import ./lf.nix) ]
   ++[ (import ./tofi/tofi.nix) ]
   ++[ (import ./helix.nix) ]
   ++[ (import ./settings.nix) ]

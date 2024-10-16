@@ -105,10 +105,15 @@
           "$mainMod SHIFT, 3, movetoworkspace, 7"
           "$mainMod SHIFT, 4, movetoworkspace, 8"
 
-          "$mainMod CTRL, H, resizeactive, -10 0"
-          "$mainMod CTRL, J, resizeactive, 0 -10"
-          "$mainMod CTRL, K, resizeactive, 0 10"
-          "$mainMod CTRL, L, resizeactive, 10 0"
+          "$mainMod CTRL, H, resizeactive, -65 0"
+          "$mainMod CTRL, J, resizeactive, 0 -65"
+          "$mainMod CTRL, K, resizeactive, 0 65"
+          "$mainMod CTRL, L, resizeactive, 65 0"
+
+          "$mainMod SHIFT, H, movewindow, l"
+          "$mainMod SHIFT, J, movewindow, d"
+          "$mainMod SHIFT, K, movewindow, u"
+          "$mainMod SHIFT, L, movewindow, r"
 
           # Scroll through existing workspaces with mainMod + scroll
           "$mainMod, mouse_down, workspace, e+1"
@@ -121,8 +126,8 @@
 
 
           # Change screen brightness
-          "$mainMod, <,  exec, brillo -U 5"
-          "$mainMod, >,  exec, brillo -A 5"
+          "$mainMod, 9,  exec, brillo -U 10"
+          "$mainMod, 0,  exec, brillo -A 10"
         ]; 
 
         bindm = [

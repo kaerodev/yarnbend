@@ -26,7 +26,7 @@
     isNormalUser = true;
     initialPassword = "password";
     description = "user ${username}";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "video" ];
     shell = pkgs.zsh;
   };
   nix.settings = {
