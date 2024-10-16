@@ -13,9 +13,14 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    anyrun = {
+      url = "github:anyrun-org/anyrun";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nixvim, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nixvim, anyrun, ... }@inputs:
   # "let binding"
   let
     lib = nixpkgs.lib;
@@ -28,13 +33,19 @@
 
       atomizer = lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/laptop) ];
+        modules = [ 
+          (import ./hosts/laptop)
+          {environment.systemPackages = [ anyrun.packages.${system}.anyrun ];}
+        ];
         specialArgs = { host="atomizer"; inherit self username inputs; };
       };
 
       shortstop = lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/desktop) ];
+        modules = [ 
+          (import ./hosts/desktop) 
+          {environment.systemPackages = [ anyrun.packages.${system}.anyrun ];}
+        ];
         specialArgs = { host = "shortstop"; inherit self username inputs; };
       };
 

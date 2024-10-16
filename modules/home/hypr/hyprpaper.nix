@@ -14,6 +14,7 @@
         "HDMI-A-2,~/.dotfiles/wallpaper/yarnbend.png"
         "DP-3,~/.dotfiles/wallpaper/yarnbend.png"
         "DP-2,~/.dotfiles/wallpaper/yarnbend.png"
+        ",~/.dotfiles/wallpaper/yarnbend.png"
       ];
 
     };

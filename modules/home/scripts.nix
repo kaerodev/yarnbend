@@ -25,5 +25,9 @@
     (pkgs.writeShellScriptBin "nvopen" ''
      kitty nvim $1
     '')
+
+    (pkgs.writeShellScriptBin "Nvim" ''
+     kitty nvim $1
+    '')
   ];
 }

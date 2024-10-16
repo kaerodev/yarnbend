@@ -35,7 +35,7 @@
 
   environment.sessionVariables = rec {
     EDITOR = "nvim";
-    VISUAL = "Nvim";
+    VISUAL = "nvim";
     TEST_VAR = "test";
 
     XDG_BIN_HOME = "$HOME/.local/bin";

@@ -5,10 +5,12 @@
     "/home/${username}/.local/bin"
   ];
 
+/*
   home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "Nvim";
   };
+*/
 
   home.activation = {
     # https://github.com/philj56/tofi/issues/115#issuecomment-1701748297

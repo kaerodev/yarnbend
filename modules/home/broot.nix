@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.broot = {
-    enable = true;
+    enable = false;
     package = pkgs.broot;
     enableZshIntegration = true;
     settings.modal = true;

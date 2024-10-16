@@ -139,13 +139,10 @@
         }
       "        
       else"
-        monitor=,preferred, auto, auto
         monitor=eDP-1, 1920x1080@60, 0x0, 1
-        monitor=DP-2, 2560x1440@60,-2560x0, 1
-        monitor=DP-3, 2560x1440@60,-2560x0, 1
-        monitor=DP-4, disable
+        monitor=, preferred, 0x-1440, 1
+        monitor=DP-4, 2560x1440@60, 0x1440, 1
         monitor=DP-5, disable
-        monitor=DP-6, disable
         xwayland {
           force_zero_scaling = true
         }

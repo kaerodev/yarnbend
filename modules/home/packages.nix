@@ -18,7 +18,6 @@
     openmw
     vscode
     zotero
-    zed-editor
     unrar
     gnumake
     texlive.combined.scheme-full
