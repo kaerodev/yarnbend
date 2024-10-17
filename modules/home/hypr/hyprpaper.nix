@@ -8,13 +8,13 @@
       splash = false;
       ipc = "on";
       
-      preload = ["~/.dotfiles/wallpaper/yarnbend.png"];
+      preload = ["~/.dotfiles/wallpaper/cyberdream.png"];
       wallpaper = [
-        "eDP-1,~/.dotfiles/wallpaper/yarnbend.png"
-        "HDMI-A-2,~/.dotfiles/wallpaper/yarnbend.png"
-        "DP-3,~/.dotfiles/wallpaper/yarnbend.png"
-        "DP-2,~/.dotfiles/wallpaper/yarnbend.png"
-        ",~/.dotfiles/wallpaper/yarnbend.png"
+        "eDP-1,~/.dotfiles/wallpaper/cyberdream.png"
+        "HDMI-A-2,~/.dotfiles/wallpaper/cyberdream.png"
+        "DP-3,~/.dotfiles/wallpaper/cyberdream.png"
+        "DP-2,~/.dotfiles/wallpaper/cyberdream.png"
+        ",~/.dotfiles/wallpaper/cyberdream.png"
       ];
 
     };

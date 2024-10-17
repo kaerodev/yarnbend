@@ -22,6 +22,6 @@
       ];
     };
 
-    colorschemes.gruvbox.enable = true;
+    colorschemes.cyberdream.enable = true;
   };
 }

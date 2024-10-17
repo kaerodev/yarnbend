@@ -11,7 +11,7 @@
   ++[ (import ./nixvim) ]
   ++[ (import ./bar-waybar) ]
   ++[ (import ./bat.nix) ]            # cat with syntax highlighting and other things UwU
-  ++[ (import ./terminal-kitty.nix) ]
+  ++[ (import ./kitty) ]
   ++[ (import ./starship.nix) ]       # prompt customization
   ++[ (import ./browser-firefox.nix) ]
   ++[ (import ./scripts.nix) ]
