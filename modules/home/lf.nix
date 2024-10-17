@@ -8,7 +8,7 @@
       map o &kitty .
       map ~ &kitty fletcher .
       map O &kitty nvim .
-      map x &trash $f
+      map X &trash $f
     '';
   };
 }
