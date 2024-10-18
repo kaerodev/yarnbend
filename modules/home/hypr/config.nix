@@ -37,9 +37,9 @@
 
           rounding = 0;
             blur = {
-              enabled = false;
-              size = 6;
-              passes = 4;
+              enabled = true;
+              size = 2;
+              passes = 2;
               new_optimizations = true;
             };
 
@@ -86,6 +86,8 @@
           "$mainMod, B, exec, firefox"
           "$mainMod, V, exec, pcmanfm"
           "$mainMod, G, exec, tofi-drun --drun-launch=true --config=/home/${username}/.config/tofi/config"
+
+          "$mainMod SHIFT, Q, exec, hyprctl dispatch exit"
 
           "$mainMod, A, workspace, 1"
           "$mainMod, S, workspace, 2"
