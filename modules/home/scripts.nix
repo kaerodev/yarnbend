@@ -29,5 +29,9 @@
     (pkgs.writeShellScriptBin "Nvim" ''
      kitty nvim $1
     '')
+
+    (pkgs.writeShellScriptBin "test_script" ''
+      kitty cd ~/.dotfiles
+    '')
   ];
 }

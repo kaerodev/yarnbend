@@ -6,7 +6,6 @@
     # random apps
     kitty
     xarchiver
-    pcmanfm
     syncthing
     pavucontrol
     nomacs

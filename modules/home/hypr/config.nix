@@ -84,8 +84,8 @@
 
           "$mainMod, RETURN, exec, kitty"
           "$mainMod, B, exec, firefox"
-          "$mainMod, V, exec, pcmanfm"
           "$mainMod, G, exec, tofi-drun --drun-launch=true --config=/home/${username}/.config/tofi/config"
+          "$mainMod, V, exec, bemenu-run"
 
           "$mainMod SHIFT, Q, exec, hyprctl dispatch exit"
 

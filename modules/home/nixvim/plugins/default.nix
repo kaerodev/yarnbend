@@ -13,5 +13,6 @@
     airline.enable = true;
     nvim-autopairs.enable = true;
     godot.enable = true;
+    vim-css-color.enable = true;
   };
 }

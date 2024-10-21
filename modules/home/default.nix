@@ -5,6 +5,7 @@
   ++[ (import ./desktop.nix) ]
   ++[ (import ./lf.nix) ]
   ++[ (import ./tofi/tofi.nix) ]
+  ++[ (import ./bemenu.nix) ]
   ++[ (import ./helix.nix) ]
   ++[ (import ./settings.nix) ]
   ++[ (import ./packages.nix) ]
