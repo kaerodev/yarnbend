@@ -22,11 +22,13 @@
     };
   };
 
+  programs.ydotool.enable = true;
+
   users.users.${username} = {
     isNormalUser = true;
     initialPassword = "password";
     description = "user ${username}";
-    extraGroups = [ "networkmanager" "wheel" "video" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "ydotool" ];
     shell = pkgs.zsh;
   };
   nix.settings = {

@@ -10,7 +10,6 @@
       map O &kitty nvim .
       map X &trash $f
       map n &Nvim $f
-      map N &kitty --detach cat $f
     '';
   };
 }
