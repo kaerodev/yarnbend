@@ -4,7 +4,7 @@
     enable = true;
     font = {
       name = "fira-code";
-      size = 10.5;
+      size = 10.0;
     };
     settings = {
       confirm_os_window_close = 0;

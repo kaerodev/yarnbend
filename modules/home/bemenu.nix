@@ -8,7 +8,6 @@
       width-factor = 1;
       prompt = "";
 
-      bottom = true;
       margin = 15;
       border = 2;
       list = "15 down";

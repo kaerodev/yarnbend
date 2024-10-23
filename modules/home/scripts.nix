@@ -22,16 +22,16 @@
       nix-collect-garbage --delete-older-than 15d
      '')
 
-    (pkgs.writeShellScriptBin "nvopen" ''
-     kitty nvim $1
+    (pkgs.writeShellScriptBin "Nvim" ''
+     kitty $1 nvim
     '')
 
-    (pkgs.writeShellScriptBin "Nvim" ''
-     kitty nvim $1
+    (pkgs.writeShellScriptBin "nvopen" ''
+     kitty -d $1 nvim
     '')
 
     (pkgs.writeShellScriptBin "lf-open" ''
-      kitty lf $1
+      kitty -d $1 lf
     '')
 
     (pkgs.writeShellScriptBin "dotfiles-open" ''
@@ -50,12 +50,24 @@
       lf-open "$HOME/dev/"
     '')
 
+    (pkgs.writeShellScriptBin "bemenufromfile" ''
+      # extra stuff is to detect if the user pressed esc and didn't mean to execute the command
+      input=$(grep -v '^#' $1 | bemenu --fixed-height --no-exec --fn="OpenDyslexicNerdFont-Regular 11")
+      if [$input -q ""]; then
+        echo exiting
+        exit 1
+      else
+        echo $input
+      fi
+    '')
+
+    # probably could/should combine shared functionality in the two bookmark commands into one command
     (pkgs.writeShellScriptBin "bookmarks" ''
-      lf-open $(grep -v '^#' ~/org/BOOKMARKS| bemenu --fixed-height --no-exec --fn="OpenDyslexicNerdFont-Regular 11")
+      input=$(bemenufromfile ~/org/BOOKMARKS) && lf-open $input
     '')
 
     (pkgs.writeShellScriptBin "bookmarksnvim" ''
-      nvopen $(grep -v '^#' ~/org/BOOKMARKS| bemenu --fixed-height --no-exec)
+      input=$(bemenufromfile ~/org/BOOKMARKS) && nvopen $input
     '')
 
     (pkgs.writeShellScriptBin "addmark" ''
