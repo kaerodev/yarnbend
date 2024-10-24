@@ -27,7 +27,7 @@
     '')
 
     (pkgs.writeShellScriptBin "nvopen" ''
-     kitty -d $1 nvim
+     kitty -d $1 nvim $1
     '')
 
     (pkgs.writeShellScriptBin "lf-open" ''
