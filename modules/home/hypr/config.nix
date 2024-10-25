@@ -84,7 +84,8 @@
 
           "$mainMod, RETURN, exec, kitty"
           "$mainMod, B, exec, firefox"
-          "$mainMod, G, exec, tofi-drun --drun-launch=true --config=/home/${username}/.config/tofi/config"
+          #"$mainMod, G, exec, tofi-drun --drun-launch=true --config=/home/${username}/.config/tofi/config"
+          "$mainMod, G, exec, bemenu-run"
           "$mainMod CTRL, V, exec, bookmarksnvim"
           "$mainMod, V, exec, bookmarks"
 
