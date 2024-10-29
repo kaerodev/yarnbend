@@ -5,6 +5,7 @@
 
     extraConfig = ''
       set hidden!
+      set relativenumber
       map o &kitty .
       map ~ &kitty fletcher .
       map O &kitty nvim .
