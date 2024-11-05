@@ -15,7 +15,10 @@
     servers = {
       clangd.enable = true;
       cmake.enable = true;
-      gdscript.enable = true;
+      gdscript = {
+        enable = true;
+        package = null;
+      };
       rust-analyzer = {
         enable = true;
         installRustc = false;

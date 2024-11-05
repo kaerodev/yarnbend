@@ -7,6 +7,7 @@
   ++[ (import ./harpoon.nix) ]
   ++[ (import ./wrapping.nix) ]
   ++[ (import ./vimtex.nix) ]
+  ++[ (import ./mkdnflow.nix) ]
   ++[ (import ./telescope.nix) ];
 
   programs.nixvim.plugins = {

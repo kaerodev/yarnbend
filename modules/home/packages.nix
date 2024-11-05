@@ -26,6 +26,7 @@
     kickoff
     lf
     trashy
+    cmus
 
     cataclysm-dda-git
     fuse
