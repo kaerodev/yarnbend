@@ -23,7 +23,17 @@
       user = "${username}";
       guiAddress = "0.0.0.0:8384";
     };
+
+    xserver = {
+      enable = true;
+
+      libinput = {
+        enable = true;
+        mouse.accelProfile = "flat";
+      };
+    };
   };
+
 
   services.logind.extraConfig = ''
     # don't shutdown if the power button is short pressed

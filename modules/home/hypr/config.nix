@@ -1,5 +1,44 @@
 { username, host, lib, config, pkgs, ... }:
 {
+  programs.hyprlock = {
+    enable = true;
+    
+    settings = {
+
+        general = {
+            disable_loading_bar = true;
+            grace = 300;
+            hide_cursor = true;
+            no_fade_in = false;
+        };
+
+        background = [
+        {
+            #path = "screenshot";
+            blur_passes = 3;
+            blur_size = 4;
+        }
+        ];
+
+        input-field = [
+        {
+            size = "200, 50";
+            position = "0, 0";
+            monitor = "";
+            dots_center = true;
+            fade_on_empty = false;
+            /*
+            font_color = "rgb(202, 211, 245)";
+            inner_color = "rgb(91, 96, 120)";
+            outer_color = "rgb(24, 25, 38)";
+            */
+            outline_thickness = 5;
+            shadow_passes = 2;
+        }
+      ];
+    };
+  };
+
   wayland.windowManager = {
     hyprland = {
       enable = true;
@@ -43,10 +82,11 @@
               new_optimizations = true;
             };
 
-          drop_shadow = true;
-          shadow_range = 16;
-          shadow_render_power = 6;
-          "col.shadow" = "rgba(000000ee)";
+          # they changed the config options again omfg
+          #drop_shadow = true;
+          #shadow_range = 16;
+          #shadow_render_power = 6;
+          #"col.shadow" = "rgba(000000ee)";
         };
 
         animations = {
@@ -144,7 +184,8 @@
       extraConfig = if (host == "shortstop") 
       then"
         monitor=,highrr,auto,1
-        monitor=HDMI-A-2, 1920x1080@144, -1080x-139, 1, transform, 1
+        monitor=DP-1,highrr,0x0,1
+        monitor=HDMI-A-2, 1920x1080@144, 2560x-540, 0.833333, transform, 1
         monitor=HDMI-A-1, 2560x1440@144, 0x0, 1
 
         xwayland {

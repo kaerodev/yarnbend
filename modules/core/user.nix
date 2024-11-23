@@ -24,6 +24,8 @@
 
   programs.ydotool.enable = true;
 
+  services.xserver.displayManager.startx.enable = true;
+
   users.users.${username} = {
     isNormalUser = true;
     initialPassword = "password";
@@ -34,4 +36,5 @@
   nix.settings = {
     allowed-users = [ "${username}" ];
   };
+
 }

@@ -2,6 +2,7 @@
 {
   imports = 
     [ (import ./hypr) ]
+  ++[ (import ./xinitrc.nix) ]
   ++[ (import ./desktop.nix) ]
   ++[ (import ./lf.nix) ]
   ++[ (import ./tofi/tofi.nix) ]
@@ -21,5 +22,4 @@
   ++[ (import ./gtk.nix) ]
   ++[ (import ./zsh.nix) ]
   ++[ (import ./games.nix) ];
-
 }

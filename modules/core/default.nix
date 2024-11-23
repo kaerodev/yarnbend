@@ -10,5 +10,6 @@
     ++ [ (import ./services.nix) ]
     ++ [ (import ./sys.nix) ]
     ++ [ (import ./user.nix) ]
-    ++ [ (import ./wayland.nix) ];
+    ++ [ (import ./wayland.nix) ]
+    ++ [ (import ./qtile) ];
 }

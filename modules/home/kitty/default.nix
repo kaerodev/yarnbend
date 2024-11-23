@@ -8,7 +8,7 @@
     };
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = "0.70";  
+      background_opacity = "1.00";  
       window_padding_width = 10;
       scrollback_lines = 10000;
       enable_audio_bell = false;
@@ -27,29 +27,53 @@
     };
 
     extraConfig = ''
-      # cyberdream theme for kitty
-      background            #16181a
-      foreground            #ffffff
-      cursor                #ffffff
-      cursor_text_color     #16181a
-      selection_background  #3c4048
-      color0                #16181a
-      color8                #3c4048
-      color1                #ff6e5e
-      color9                #ff6e5e
-      color2                #5eff6c
-      color10               #5eff6c
-      color3                #f1ff5e
-      color11               #f1ff5e
-      color4                #5ea1ff
-      color12               #5ea1ff
-      color5                #bd5eff
-      color13               #bd5eff
-      color6                #5ef1ff
-      color14               #5ef1ff
-      color7                #ffffff
-      color15               #ffffff
-      selection_foreground  #ffffff
+        background #403838
+        foreground #fff1f3
+
+        cursor #fff1f3
+        cursor_text_color #000000
+        selection_foreground #403838
+        selection_background #fff1f3
+
+        # dull black
+        color0 #403838
+        # light black
+        color8 #72696a
+
+        # dull red
+        color1 #fd6883
+        # light red
+        color9 #fd6883
+
+        # dull green
+        color2 #adda78
+        # light green
+        color10 #adda78
+
+        # yellow
+        color3 #f9cc6c
+        # light yellow
+        color11 #f9cc6c
+
+        # blue
+        color4 #f38d70
+        # light blue
+        color12 #f38d70
+
+        # magenta
+        color5 #a8a9eb
+        # light magenta
+        color13 #a8a9eb
+
+        # cyan
+        color6 #85dacc
+        # light cyan
+        color14 #85dacc
+
+        # dull white
+        color7 #fff1f3
+        # bright white
+        color15 #fff1f3
     '';
   };
 }

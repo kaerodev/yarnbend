@@ -28,6 +28,7 @@
       marksman.enable = true;
       texlab.enable = true;
       html.enable = true;
+      nixd.enable =true;
     };
   };
 }

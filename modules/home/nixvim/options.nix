@@ -19,8 +19,8 @@
 
 
       # tabs insert 2 spaces
-      tabstop = 2;
-      shiftwidth = 2;
+      tabstop = 4;
+      shiftwidth = 4;
       expandtab = true;
 
       # wrapping\

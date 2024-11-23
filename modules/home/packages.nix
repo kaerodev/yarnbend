@@ -27,6 +27,7 @@
     lf
     trashy
     cmus
+    xorg.xinit
 
     cataclysm-dda-git
     fuse
@@ -68,12 +69,12 @@
 
     mono
     libgcc
-    gcc
+    #gcc
+    clang
     rustup
     python3Full
     lldb
     ripgrep
   ]);
-  
 }
 
