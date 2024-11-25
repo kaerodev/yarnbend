@@ -29,6 +29,10 @@
       texlab.enable = true;
       html.enable = true;
       nixd.enable =true;
+      glsl_analyzer = {
+        enable = true;
+        filetypes = [ "vert" "frag" ];
+      };
     };
   };
 }
