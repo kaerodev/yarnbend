@@ -4,6 +4,7 @@
 
   home.packages = (with pkgs; [
     # random apps
+    gimp
     kitty
     xarchiver
     syncthing
