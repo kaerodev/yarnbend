@@ -29,11 +29,10 @@
       marksman.enable = true;
       texlab.enable = true;
       html.enable = true;
-      nixd.enable = true;
+      nixd.enable =true;
       glsl_analyzer = {
         enable = true;
-        filetypes = [ "vert" "glsl" "frag" ];
-        autostart = true;
+        filetypes = [ "vert" "frag" ];
       };
     };
   };
