@@ -20,6 +20,7 @@
     vscode
     zotero
     unrar
+    p7zip
     gnumake
     texlive.combined.scheme-full
     latexrun
@@ -29,6 +30,7 @@
     trashy
     cmus
     xorg.xinit
+    anki
 
     cataclysm-dda-git
     fuse
