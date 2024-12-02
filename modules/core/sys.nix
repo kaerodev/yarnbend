@@ -56,6 +56,7 @@
     unzip
     xdg-utils
     wluma
+    inputs.zen-browser.packages."${system}".specific
 
 # vim configuration
       ((vim_configurable.override {  }).customize{

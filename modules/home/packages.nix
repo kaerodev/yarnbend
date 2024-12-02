@@ -31,6 +31,7 @@
     cmus
     xorg.xinit
     anki
+    jetbrains.clion
 
     cataclysm-dda-git
     fuse
