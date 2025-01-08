@@ -2,8 +2,9 @@
 {
   fonts.fontconfig.enable = true;
   home.packages = [
-    pkgs.nerdfonts
-      (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
+    # TODO: redo this bit
+    #pkgs.nerd-fonts.hack
+      #(pkgs.nerd-fonts.hack.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
     pkgs.noto-fonts-emoji
   ];
 

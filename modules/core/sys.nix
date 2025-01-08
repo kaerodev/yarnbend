@@ -45,6 +45,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    cmake
     ncurses
     wget
     git
