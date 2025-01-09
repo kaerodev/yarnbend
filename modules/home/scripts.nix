@@ -70,6 +70,10 @@
       input=$(bemenufromfile ~/org/BOOKMARKS) && nvopen $input
     '')
 
+    (pkgs.writeShellScriptBin "bookmarksterminal" ''
+      input=$(bemenufromfile ~/org/BOOKMARKS) && kitty --directory=$input
+    '')
+
     (pkgs.writeShellScriptBin "addmark" ''
       bookmark=$1
       file="$HOME/org/BOOKMARKS"

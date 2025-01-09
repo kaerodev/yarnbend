@@ -16,7 +16,6 @@
     networkmanagerapplet
     godot_4
     prismlauncher
-    openmw
     vscode
     zotero
     unrar
@@ -31,7 +30,6 @@
     cmus
     xorg.xinit
     anki
-    jetbrains.clion
 
     cataclysm-dda-git
     fuse

@@ -128,6 +128,7 @@
           "$mainMod, G, exec, bemenu-run"
           "$mainMod CTRL, V, exec, bookmarksnvim"
           "$mainMod, V, exec, bookmarks"
+          "$mainMod, O, exec, bookmarksterminal"
 
           "$mainMod SHIFT, Q, exec, hyprctl dispatch exit"
 
