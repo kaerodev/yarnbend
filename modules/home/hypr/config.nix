@@ -186,7 +186,7 @@
       then"
         monitor=,highrr,auto,1
         monitor=DP-1,highrr,0x0,1
-        monitor=HDMI-A-2, 1920x1080@144, 2560x-540, 0.833333, transform, 1
+        monitor=HDMI-A-2, 1920x1080@144, 2560x-540, 1, transform, 1
         monitor=HDMI-A-1, 2560x1440@144, 0x0, 1
 
         xwayland {

@@ -15,6 +15,8 @@
 
     servers = {
       clangd.enable = true;
+      zls.enable = true;
+      hls.enable = true;
       cmake.enable = true;
       gdscript = {
         enable = true;
@@ -33,6 +35,10 @@
       glsl_analyzer = {
         enable = true;
         filetypes = [ "vert" "frag" ];
+      };
+      prolog_ls = {
+        enable = true;
+        package = null;
       };
     };
   };

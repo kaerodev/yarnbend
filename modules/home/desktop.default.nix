@@ -5,9 +5,8 @@
 
   home.packages = (with pkgs; [
     kdenlive
-    blender
+    #blender
     gimp
     r2modman
-    trenchbroom
   ]);
 }

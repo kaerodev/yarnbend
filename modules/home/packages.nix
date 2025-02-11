@@ -4,6 +4,7 @@
 
   home.packages = (with pkgs; [
     # random apps
+    qalculate-gtk
     gimp
     kitty
     xarchiver
@@ -26,13 +27,17 @@
     clifm
     kickoff
     lf
+    broot
     trashy
     cmus
     xorg.xinit
     anki
+    fluent-reader
 
     cataclysm-dda-git
     fuse
+
+    openvpn
 
     obsidian
     firefox
@@ -50,7 +55,6 @@
     xdg-desktop-portal-hyprland
     openssl
     python312Packages.pip
-    python312Packages.tkinter
     wineWowPackages.stable
 
     # Screenshots
@@ -62,7 +66,8 @@
     mako
     hyprshot
 
-    alsa-lib
+    alsa-lib.dev
+    alsa-utils
 
     eza
     fzf
@@ -71,11 +76,18 @@
 
     mono
     libgcc
-    #gcc
-    clang
+    gcc
+    lobster
+
+    ghc
+    haskell-language-server
+    cabal-install
+    stack
+
     rustup
+    swi-prolog
     python3Full
-    lldb
+    zig
     ripgrep
   ]);
 }

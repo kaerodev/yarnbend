@@ -156,7 +156,7 @@
   "layer": "top",
   "position": "top",
   "height": 10,
-  "width": 1000,
+  "width": 800,
   "margin-bottom":0,
   "margin-top":20,
   "reload_style_on_change": true,
