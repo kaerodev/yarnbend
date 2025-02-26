@@ -44,6 +44,7 @@
     libreoffice
     obs-studio
     rawtherapee
+    darktable
     audacity
     mangohud
 
@@ -83,6 +84,9 @@
     haskell-language-server
     cabal-install
     stack
+
+    zls
+    clang-tools
 
     rustup
     swi-prolog
