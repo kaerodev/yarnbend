@@ -75,8 +75,8 @@
     '')
 
     (pkgs.writeShellScriptBin "addmark" ''
-      bookmark=$1
       file="$HOME/org/BOOKMARKS"
+      bookmark=$PWD          
 
       if grep -q "^$bookmark$" "$file"; then
         notify-send "Error" "Bookmark already present."
