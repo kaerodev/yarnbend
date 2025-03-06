@@ -23,15 +23,6 @@
       user = "${username}";
       guiAddress = "0.0.0.0:8384";
     };
-
-    xserver = {
-      enable = true;
-
-      libinput = {
-        enable = true;
-        mouse.accelProfile = "flat";
-      };
-    };
   };
 
 

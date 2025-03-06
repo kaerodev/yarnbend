@@ -10,7 +10,7 @@
     reload-style-on-change = true;
 
     output = [
-        "TURNED OFF FOR NOW"
+        "eDP-1"
     ];
 
     modules-left = [

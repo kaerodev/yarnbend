@@ -16,13 +16,18 @@
     servers = {
       clangd.enable = true;
       zls.enable = true;
-      hls.enable = true;
+
+      hls = {
+        enable = true;
+        installGhc = false;
+      };
+
       cmake.enable = true;
       gdscript = {
         enable = true;
         package = null;
       };
-      rust-analyzer = {
+      rust_analyzer = {
         enable = true;
         installRustc = false;
         installCargo = false;
