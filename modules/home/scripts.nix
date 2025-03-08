@@ -30,24 +30,24 @@
      kitty -d $1 nvim $1
     '')
 
-    (pkgs.writeShellScriptBin "lf-open" ''
-      kitty -d $1 lf
+    (pkgs.writeShellScriptBin "tf-open" ''
+      kitty -d $1 yazi
     '')
 
     (pkgs.writeShellScriptBin "dotfiles-open" ''
-      lf-open ~/.dotfiles
+      tf-open ~/.dotfiles
     '')
 
     (pkgs.writeShellScriptBin "info-open" ''
-      lf-open ~/org/Information
+      tf-open ~/org/Information
     '')
 
     (pkgs.writeShellScriptBin "life-open" ''
-      lf-open ~/org/Life
+      tf-open ~/org/Life
     '')
 
     (pkgs.writeShellScriptBin "dev-open" ''
-      lf-open "$HOME/dev/"
+      tf-open "$HOME/dev/"
     '')
 
     (pkgs.writeShellScriptBin "bemenufromfile" ''
@@ -63,7 +63,7 @@
 
     # probably could/should combine shared functionality in the two bookmark commands into one command
     (pkgs.writeShellScriptBin "bookmarks" ''
-      input=$(bemenufromfile ~/org/BOOKMARKS) && lf-open $input
+      input=$(bemenufromfile ~/org/BOOKMARKS) && tf-open $input
     '')
 
     (pkgs.writeShellScriptBin "bookmarksnvim" ''
