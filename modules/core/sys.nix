@@ -38,6 +38,8 @@
     VISUAL = "nvim";
     TEST_VAR = "test";
 
+    MOZ_ENABLE_WAYLAND = 0;
+
     XDG_BIN_HOME = "$HOME/.local/bin";
     PATH = [
       "${XDG_BIN_HOME}"
@@ -57,7 +59,7 @@
     unzip
     xdg-utils
     wluma
-    inputs.zen-browser.packages."${system}".specific
+    inputs.zen-browser.packages."${system}".default
 
 # vim configuration
       ((vim_configurable.override {  }).customize{

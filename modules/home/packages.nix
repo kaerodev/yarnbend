@@ -28,6 +28,8 @@
     kickoff
     lf
     broot
+    yazi
+    zellij
     trashy
     cmus
     xorg.xinit
