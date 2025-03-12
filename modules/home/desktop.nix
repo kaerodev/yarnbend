@@ -1,10 +1,10 @@
 { ... }:
 {
   xdg.desktopEntries = {
-    nvim = {
-      name = "Nvim";
+    neovim-open = {
+      name = "nvopen";
       genericName = "Text Editor";
-      exec = "nvopen %F";
+      exec = "no %F";
       type = "Application";
       startupNotify = false;
       mimeType = [ "text/markdown" "text/plain" "text/x-tex" ];

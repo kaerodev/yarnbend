@@ -1,6 +1,10 @@
 { username, config, lib, pkgs, ... }:
 {
   programs.zsh = {
+    sessionVariables = {
+        EDITOR = "no";
+    };
+
     enable = true;
     dotDir = ".config/zsh";
     enableCompletion = true;
@@ -26,12 +30,9 @@
       startui = "dbus-run-session Hyprland";
     };
 
-/*
-    sessionVariables = {
-      EDITOR = "nvim";
-      VISUAL = "Nvim";
-    };
-    */
+    initExtra = ''
+        export EDITOR=no
+    '';
   };
 
   programs.zoxide = {

@@ -8,12 +8,15 @@
   ++[ (import ./tofi/tofi.nix) ]
   ++[ (import ./bemenu.nix) ]
   ++[ (import ./helix.nix) ]
+  ++[ (import ./yazi.nix) ]
   ++[ (import ./settings.nix) ]
   ++[ (import ./packages.nix) ]
   ++[ (import ./nixvim) ]
+  ++[ (import ./emacs.nix) ]
   ++[ (import ./bar-waybar) ]
   ++[ (import ./bat.nix) ]            # cat with syntax highlighting and other things UwU
   ++[ (import ./kitty) ]
+  ++[ (import ./broot.nix) ]
   ++[ (import ./starship.nix) ]       # prompt customization
   ++[ (import ./browser-firefox.nix) ]
   ++[ (import ./scripts.nix) ]

@@ -34,8 +34,8 @@
   environment.localBinInPath = true;
 
   environment.sessionVariables = rec {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
+    EDITOR = "no";
+    VISUAL = "no";
     TEST_VAR = "test";
 
     MOZ_ENABLE_WAYLAND = 0;

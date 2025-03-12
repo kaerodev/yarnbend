@@ -1,9 +1,18 @@
 { pkgs, ... }:
 {
   programs.broot = {
-    enable = false;
-    package = pkgs.broot;
+    enable = true;
     enableZshIntegration = true;
     settings.modal = true;
+
+    settings.verbs = [
+        { 
+            invocation = "nvim"; 
+            key = "alt-o"; 
+            execution = "Nvim {file}";
+            from_shell = true;
+            leave_broot = false;
+        }
+    ];
   };
 }

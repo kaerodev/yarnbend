@@ -6,6 +6,10 @@
       cat /sys/class/power_supply/BAT0/capacity
      '')
 
+    (pkgs.writeShellScriptBin "doom" ''
+        sh $HOME/.config/emacs/bin/doom run 
+     '')
+
     (pkgs.writeShellScriptBin "switch-config" ''
       sudo nixos-rebuild switch --flake /home/${username}/.dotfiles#${host}
      '')
@@ -22,14 +26,14 @@
       nix-collect-garbage --delete-older-than 15d
      '')
 
-    (pkgs.writeShellScriptBin "Nvim" ''
-     kitty $1 nvim
+    # open directory in a new kitty window
+    (pkgs.writeShellScriptBin "ko" ''
+        kitty -d $1 & disown
     '')
 
-    (pkgs.writeShellScriptBin "nvopen" ''
-     kitty -d $1 nvim $1
+    (pkgs.writeShellScriptBin "no" ''
+     kitty -d $1 nvim $1 & disown
     '')
-
     (pkgs.writeShellScriptBin "tf-open" ''
       kitty -d $1 yazi
     '')

@@ -1,4 +1,10 @@
 { config, pkgs, ... }:
+let
+  # Create a customized version of logseq
+  logseq-patch = pkgs.logseq.override {
+    electron_27 = pkgs.electron_34;
+  };
+in
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -27,8 +33,6 @@
     clifm
     kickoff
     lf
-    broot
-    yazi
     zellij
     trashy
     cmus
@@ -42,6 +46,8 @@
     openvpn
 
     obsidian
+    logseq-patch
+    glibc
     firefox
     libreoffice
     obs-studio

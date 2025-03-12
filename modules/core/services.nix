@@ -1,4 +1,4 @@
-{ username, ... }:
+{ pkgs, username, ... }:
 { 
   services = {
     gnome.gnome-keyring.enable = true;
@@ -22,6 +22,11 @@
       openDefaultPorts = true;
       user = "${username}";
       guiAddress = "0.0.0.0:8384";
+    };
+
+    emacs = {
+        enable = true;
+        package = pkgs.emacs;
     };
   };
 
