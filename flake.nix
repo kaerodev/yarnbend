@@ -15,6 +15,10 @@
     };
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    vintagestory-nix = {
+      url = "github:PierreBorine/vintagestory-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, nixvim, ... }@inputs:

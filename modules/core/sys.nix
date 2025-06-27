@@ -12,13 +12,6 @@
     };
   };
 
-  nixpkgs = {
-    config.allowUnfree = true;
-    config.permittedInsecurePackages = [
-      "freeimage-unstable-2021-11-01"
-    ];
-  };
-
   time.timeZone = "America/Vancouver";
   i18n.defaultLocale = "en_CA.UTF-8";
   system.stateVersion = "24.05";
@@ -28,6 +21,10 @@
     fira-code-symbols
     liberation_ttf
   ];
+
+  networking.extraHosts = ''
+    127.0.0.1 youtube.com
+  '';
 
   fonts.enableDefaultPackages = true;
 
@@ -40,6 +37,8 @@
 
     MOZ_ENABLE_WAYLAND = 0;
 
+    DOTNET_ROOT = "${pkgs.dotnet-runtime_7}/share/dotnet";
+
     XDG_BIN_HOME = "$HOME/.local/bin";
     PATH = [
       "${XDG_BIN_HOME}"
@@ -47,6 +46,9 @@
   };
 
   environment.systemPackages = with pkgs; [
+    glfw
+    glfw2
+    dotnet-runtime_7
     cmake
     ncurses
     wget
@@ -82,7 +84,7 @@
 
        " search changes
        set hlsearch
-       set showmatch
+           set showmatch
        set incsearch
        set showmode
        set ignorecase

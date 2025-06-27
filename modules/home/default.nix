@@ -16,7 +16,6 @@
   ++[ (import ./bar-waybar) ]
   ++[ (import ./bat.nix) ]            # cat with syntax highlighting and other things UwU
   ++[ (import ./kitty) ]
-  ++[ (import ./broot.nix) ]
   ++[ (import ./starship.nix) ]       # prompt customization
   ++[ (import ./browser-firefox.nix) ]
   ++[ (import ./scripts.nix) ]

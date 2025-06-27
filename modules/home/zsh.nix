@@ -30,7 +30,7 @@
       startui = "dbus-run-session Hyprland";
     };
 
-    initExtra = ''
+    initContent = ''
         export EDITOR=no
     '';
   };

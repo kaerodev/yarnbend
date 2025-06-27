@@ -1,15 +1,12 @@
-{ config, pkgs, ... }:
-let
-  # Create a customized version of logseq
-  logseq-patch = pkgs.logseq.override {
-    electron_27 = pkgs.electron_34;
-  };
-in
+{ config, pkgs, inputs, system, ... }:
 {
-  nixpkgs.config.allowUnfree = true;
-
   home.packages = (with pkgs; [
     # random apps
+    kakoune
+    protontricks
+    gdb
+    valgrind
+    keypunch 
     qalculate-gtk
     gimp
     kitty
@@ -35,10 +32,17 @@ in
     lf
     zellij
     trashy
-    cmus
     xorg.xinit
     anki
     fluent-reader
+    popsicle
+    cryptsetup
+    iosevka
+    blender
+    tor-browser
+    openmw
+    lutris
+    pcmanfm
 
     cataclysm-dda-git
     fuse
@@ -46,7 +50,6 @@ in
     openvpn
 
     obsidian
-    logseq-patch
     glibc
     firefox
     libreoffice
@@ -96,6 +99,14 @@ in
     zls
     clang-tools
 
+    wayland
+    wayland-scanner
+    wayland-utils
+    wayland-protocols
+    wayland-logout
+    wayland-proxy-virtwl
+    glfw-wayland
+    envsubst
     rustup
     swi-prolog
     python3Full

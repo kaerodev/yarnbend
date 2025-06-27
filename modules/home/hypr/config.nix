@@ -65,7 +65,7 @@
           "col.inactive_border" = "rgba(ceaa7aff)";
           "col.active_border" = "rgba(ff718dff)";
 
-          border_part_of_window = false;
+          #border_part_of_window = false;
           no_border_on_floating = false;
 
           layout = "dwindle";
@@ -186,7 +186,7 @@
       then"
         monitor=,highrr,auto,1
         monitor=DP-1,highrr,0x0,1
-        monitor=HDMI-A-2, 1920x1080@144, 2560x-540, 1, transform, 1
+        monitor=HDMI-A-2, 1920x1080@144, -1080x-40, 1, transform, 1
         monitor=HDMI-A-1, 2560x1440@144, 0x0, 1
 
         xwayland {

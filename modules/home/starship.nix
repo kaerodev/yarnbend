@@ -12,8 +12,8 @@
       };
 
       character = {
-        success_symbol = "[󰋑](bold red)[ ➜](bold green)";
-        error_symbol = "[](bold yellow)[ ➜](bold red)";
+        success_symbol = "[󰋑](bold red)[ 󱞩](bold green)";
+        error_symbol = "[](bold yellow)[ 󱞩](bold red)";
       };
 
       cmd_duration = {
